@@ -1,98 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahender Rathod | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Meghavath Mahender Rathod — Certified Ethical Hacker | Penetration Tester | Cybersecurity Professional" />
+  <title>Silent_0x — Meghavath Mahender Rathod | Ethical Hacker</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header / Navbar -->
+  <header id="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Silent_0x</h1>
+        <p class="tag">Certified Ethical Hacker & Penetration Tester</p>
+      </div>
 
-    <!-- Navbar -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Mahender<span>R</span></h1>
-            <nav id="nav-menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav id="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="resumeBtn" class="btn-outline"><a href="/Mahender_resume.pdf" download>Download Resume</a></button>
+        <button id="menuToggle" class="hamburger" aria-label="Toggle menu">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Meghavath <span>Mahender Rathod</span></h2>
+        <p>Certified Ethical Hacker (CEH) • Penetration Tester • SOC & Threat Detection</p>
+        <div class="cta">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="mailto:mahenderrathod2326@gmail.com" class="btn btn-outline">Contact</a>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h2>Hello, I'm <span>Mahender Rathod</span></h2>
-            <p>Cybersecurity Enthusiast | Ethical Hacker | Bug Bounty Hunter</p>
-            <a href="#contact" class="btn">Contact Me</a>
+      <div class="hero-image">
+        <img src="images/profile.jpg" alt="Meghavath Mahender Rathod — Silent_0x" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="lead">
+        Certified Ethical Hacker (CEH) with hands-on experience in penetration testing,
+        security operations (SOC), threat monitoring and incident response. Experienced
+        in vulnerability assessment, web security testing.
+      </p>
+
+      <div class="two-col">
+        <div>
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>Mobile: <strong>+91 93907 46534</strong></li>
+            <li>Email: <a href="mailto:mahenderrathod2326@gmail.com">mahenderrathod2326@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/mahender-rathod-822021239" target="_blank" rel="noopener">linkedin.com/in/mahender-rathod-822021239</a></li>
+            <li>GitHub: <a href="https://github.com/silent-0x" target="_blank" rel="noopener">github.com/silent-0x</a></li>
+          </ul>
         </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="about container">
-        <h2>About Me</h2>
-        <p>I am a cybersecurity professional passionate about penetration testing, vulnerability assessment, and protecting digital assets. I love finding creative solutions to security problems.</p>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skill-bar">
-            <p>Penetration Testing</p>
-            <div class="bar"><span style="width: 90%"></span></div>
+        <div>
+          <h3>Summary</h3>
+          <p>
+            Proficient in SIEM (Splunk, IBM QRadar), EDR/XDR, vulnerability scanning
+            (Nessus/OpenVAS), web-app testing (Burp Suite), and network tools (Nmap, Wireshark).
+            Strong foundation in MITRE ATT&CK, NIST, ISO 27001, and OWASP Top 10.
+          </p>
         </div>
-        <div class="skill-bar">
-            <p>Web Security</p>
-            <div class="bar"><span style="width: 85%"></span></div>
-        </div>
-        <div class="skill-bar">
-            <p>Linux & Networking</p>
-            <div class="bar"><span style="width: 80%"></span></div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                
-            </div>
-            <div class="project-card">
-                <img src="images/project1.jpg" alt="Project 1">
-                <h3>Vulnerability Matcher</h3>
-                <p>Tool to detect and match vulnerabilities for faster remediation.</p>
-            </div>
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>Penetration Testing</h4>
+          <div class="skill-bar"><span data-width="90%"></span></div>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/yourformid" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="_replyto" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Mahender Rathod | All Rights Reserved</p>
-        <div class="socials">
-            <a href="https://github.com/silent-0x"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/mahender-rathod-822021239/"><i class="fab fa-linkedin"></i></a>
+        <div class="skill">
+          <h4>Vulnerability Assessment</h4>
+          <div class="skill-bar"><span data-width="88%"></span></div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="skill">
+          <h4>SOC & Threat Detection</h4>
+          <div class="skill-bar"><span data-width="85%"></span></div>
+        </div>
+
+        <div class="skill">
+          <h4>Web Security (OWASP)</h4>
+          <div class="skill-bar"><span data-width="87%"></span></div>
+        </div>
+
+        <div class="skill">
+          <h4>Tools</h4>
+          <p class="mini">Nmap • Burp Suite • Metasploit • Wireshark • Nessus • OpenVAS • Splunk • IBM QRadar</p>
+        </div>
+
+        <div class="skill">
+          <h4>Scripting</h4>
+          <p class="mini">Python • Bash</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience / Timeline -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="time">May 2024 — Nov 2024</div>
+          <div class="timeline-body">
+            <h4>Intern — Penetration & SOC</h4>
+            <p>Cartel Software Pvt. Ltd. — Contributed to SOC monitoring; conducted 50+ vulnerability assessments; supported 20+ penetration tests.</p>
+            <ul>
+              <li>Reduced false positives by ~30% in SIEM tuning.</li>
+              <li>Identified and remediated critical risks, improving security posture.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects & Publications</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="images/vulnmatcher.jpg" alt="Vulnerability Matcher" />
+          <div class="project-content">
+            <h3>Vulnerability Matcher</h3>
+            <p>Automates vulnerability detection and maps findings to CVE entries to prioritise remediation.</p>
+            <div class="project-tags"><span>Python</span><span>Vuln Management</span></div>
+            <a href="https://github.com/Rathod0001-Hacker/Vulnerability-Matcher" target="_blank" rel="noopener" class="btn-small">View Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/recon-tool.jpg" alt="Recon Automation Tool" />
+          <div class="project-content">
+            <h3>Recon Automation Tool</h3>
+            <p>Scripted subdomain enumeration, scanning and fingerprinting to accelerate reconnaissance for bug bounty workflows.</p>
+            <div class="project-tags"><span>Bash</span><span>Subdomain</span></div>
+            <a href="https://github.com/Rathod0001-Hacker/Recon-Automation" target="_blank" rel="noopener" class="btn-small">View Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/paper.jpg" alt="Adaptive Vulnerability Matching" />
+          <div class="project-content">
+            <h3>Adaptive Vulnerability Matching Assessment</h3>
+            <p>Journal publication that presents a holistic approach to vulnerability assessments across OS and web apps.</p>
+            <div class="project-tags"><span>Publication</span><span>Research</span></div>
+            <a href="#" class="btn-small">View Paper</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul class="achievements-list">
+        <li>Published papers on OWASP risk calculator & adaptive vulnerability matching.</li>
+        <li>Solved 30+ virtual lab simulations in penetration testing (TryHackMe / HTB style).</li>
+        <li>Completed CEH (EC-Council) and SOC fundamentals (Palo Alto Networks).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="two-col">
+        <div>
+          <p>If you have a responsible disclosure or would like to connect for a role or collaboration, send a message below or email me directly.</p>
+
+          <!-- Formspree ready (replace YOUR_FORM_ID) -->
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your Name" required />
+
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="_replyto" type="email" placeholder="your@email.com" required />
+
+            <label class="sr-only" for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Your message / responsible disclosure" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+
+          <p class="small">Or email: <a href="mailto:mahenderrathod2326@gmail.com">mahenderrathod2326@gmail.com</a></p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="/Mahender_resume.pdf" download>Download Resume (PDF)</a></li>
+            <li><a href="https://github.com/Rathod0001-Hacker" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/mahender-rathod-822021239" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to top -->
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Meghavath Mahender Rathod — Silent_0x • Built for learning & responsible disclosure</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html
